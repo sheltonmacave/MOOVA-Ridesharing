@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-include '../includes/header_private.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+include 'includes/header_private.php';
 
 $stmt = $pdo->prepare("
     SELECT l.id, l.action, l.created_at, u.name AS user_name, u.role
@@ -102,4 +102,4 @@ function toggleAccordion(id) {
 }
 </script>
 
-<?php include '../includes/footer_private.php'; ?>
+<?php include 'includes/footer_private.php'; ?>

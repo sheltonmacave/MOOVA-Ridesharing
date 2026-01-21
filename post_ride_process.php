@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-require_once '../includes/log_function.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+require_once 'includes/log_function.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     header("Location: post_ride.php");

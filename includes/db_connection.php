@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'ride_sharing_db';
-$username = 'root';
-$password = '';
+$host = 'sql100.infinityfree.com';
+$dbname = 'if0_40958451_XXX';
+$username = 'if0_40958451';
+$password = 'MOOVARideshare';
 
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-include '../includes/header_private.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+include 'includes/header_private.php';
 
 $user_id = $_SESSION['user_id'] ?? 0;
 $ride_id = intval($_GET['ride_id'] ?? 0);
@@ -141,4 +141,4 @@ geocode("<?= addslashes($ride['pickup_location']) ?>", "Partida");
 geocode("<?= addslashes($ride['drop_location']) ?>", "Destino");
 </script>
 
-<?php include '../includes/footer_private.php'; ?>
+<?php include 'includes/footer_private.php'; ?>

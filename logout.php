@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once '../includes/db_connection.php';
-require_once '../includes/log_function.php';
+require_once 'includes/db_connection.php';
+require_once 'includes/log_function.php';
 
 if (isset($_SESSION['user_id'])) {
     log_action($pdo, $_SESSION['user_id'], "Logout realizado");

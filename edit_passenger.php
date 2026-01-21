@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-require_once '../includes/log_function.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+require_once 'includes/log_function.php';
 
 $user_id = $_SESSION['user_id'];
 $ride_id = intval($_POST['ride_id'] ?? 0);

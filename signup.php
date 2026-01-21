@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../includes/header_public.php';
+include 'includes/header_public.php';
 
 $signup_errors = $_SESSION['signup_errors'] ?? [];
 unset($_SESSION['signup_errors']);
@@ -126,5 +126,5 @@ function toggleDriverFields(role) {
 </script>
 
 <?php
-include '../includes/footer_public.php';
+include 'includes/footer_public.php';
 ?>

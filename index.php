@@ -1,9 +1,9 @@
 <?php
-include '../includes/header_public.php';
+include 'includes/header_public.php';
 ?>
 <section class="landing-container" style="min-height:85vh;">
     <div class="landing-image">
-        <img src="../assets/images/Main.png" alt="Ilustração de Compartilhamento de Carro" />
+        <img src="assets/images/Main.png" alt="Ilustração de Compartilhamento de Carro" />
     </div>
     <div class="welcome-text">
         <h1>Bem-vindo ao <span style="color:#0077cc;">MOOVA Ride Sharing</span></h1>
@@ -122,5 +122,5 @@ include '../includes/header_public.php';
 </style>
 
 <?php
-include '../includes/footer_public.php';
+include 'includes/footer_public.php';
 ?>

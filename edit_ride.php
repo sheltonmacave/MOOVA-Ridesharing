@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-require_once '../includes/log_function.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+require_once 'includes/log_function.php';
 
 $user_id = $_SESSION['user_id'] ?? 0;
 $ride_id = intval($_GET['ride_id'] ?? 0);
@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-include '../includes/header_private.php';
+include 'includes/header_private.php';
 ?>
 
 <section class="max-w-4xl mx-auto px-4 py-8 bg-white shadow-lg rounded-lg mt-8 mb-8">

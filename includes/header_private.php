@@ -1,6 +1,6 @@
 <?php
 if (!isset($_SESSION['user_id'])) {
-    header('Location: ../public/login.php');
+    header('Location: public/login.php');
     exit;
 }
 
@@ -140,7 +140,7 @@ $userRole = $user['role'] ?? 'user';
         <div class="nav-container">
             <div class="logo">
                 <a href="dashboard.php" title="MOOVA Ride Sharing">
-                    <img src="../assets/images/Car_logo.png" alt="MOOVA Logo" class="h-12">
+                    <img src="assets/images/Car_logo.png" alt="MOOVA Logo" class="h-12">
                 </a>
             </div>
             <nav class="nav-links" id="navLinks">
@@ -152,7 +152,7 @@ $userRole = $user['role'] ?? 'user';
                 <a href="logs.php" class="font-medium">Logs</a>
                 <a href="profile.php?user_id=<?= $_SESSION['user_id'] ?>" class="block px-4 py-2"><i class="fas fa-user-circle text-xl"></i> Perfil</a>
 
-                <a href="../public/logout.php" class="logout-btn">Logout</a>
+                <a href="public/logout.php" class="logout-btn">Logout</a>
 
             </nav>
             <button class="mobile-menu md:hidden" id="mobileMenuBtn">

@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-include '../includes/header_private.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+include 'includes/header_private.php';
 
 $userId = $_SESSION['user_id'] ?? null;
 
@@ -11,7 +11,7 @@ if (!$userId) {
                 Sessão inválida. Faça login novamente.
             </div>
           </div>';
-    include '../includes/footer_private.php';
+    include 'includes/footer_private.php';
     exit;
 }
 
@@ -31,7 +31,7 @@ try {
                     Utilizador não encontrado.
                 </div>
               </div>';
-        include '../includes/footer_private.php';
+        include 'includes/footer_private.php';
         exit;
     }
 } catch (Exception $ex) {
@@ -40,11 +40,11 @@ try {
                 Não foi possível carregar os dados do utilizador.
             </div>
           </div>';
-    include '../includes/footer_private.php';
+    include 'includes/footer_private.php';
     exit;
 }
 
-$photo_path = "../assets/images/driver.png";
+$photo_path = "assets/images/driver.png";
 ?>
 
 <!DOCTYPE html>
@@ -348,6 +348,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<?php include '../includes/footer_private.php'; ?>
+<?php include 'includes/footer_private.php'; ?>
 </body>
 </html>

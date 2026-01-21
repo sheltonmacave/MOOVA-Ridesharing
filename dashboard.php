@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-include '../includes/header_private.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+include 'includes/header_private.php';
 
 $user_id = $_SESSION['user_id'] ?? 0;
 if (!$user_id) {
@@ -228,6 +228,6 @@ if($user_role === 'user') {
 });
 </script>
 
-<?php include '../includes/footer_private.php'; ?>
+<?php include 'includes/footer_private.php'; ?>
 </body>
 </html>

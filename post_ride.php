@@ -1,7 +1,7 @@
 <?php
-require_once '../includes/auth_check.php';
-require_once '../includes/db_connection.php';
-include '../includes/header_private.php';
+require_once 'includes/auth_check.php';
+require_once 'includes/db_connection.php';
+include 'includes/header_private.php';
 
 $user_id = $_SESSION['user_id'];
 $user_role = '';

@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once '../includes/db_connection.php';
-require_once '../includes/log_function.php';
+require_once 'includes/db_connection.php';
+require_once 'includes/log_function.php';
 
 function sanitize($data) {
     return htmlspecialchars(stripslashes(trim($data)));

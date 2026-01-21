@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../includes/header_public.php';
+include 'includes/header_public.php';
 
 if (isset($_SESSION['user_id'])) {
     header('Location: dashboard.php');
@@ -183,7 +183,7 @@ unset($_SESSION['signup_success']);
     </section>
 
     <?php
-    include '../includes/footer_public.php';
+    include 'includes/footer_public.php';
     ?>
     <script>
         if (window.history && window.history.replaceState) {
